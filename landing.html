@@ -17,6 +17,18 @@
             padding: 1rem;
             text-align: center;
         }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .product {
             background-color: white;
             border: 1px solid #ddd;
@@ -68,18 +80,25 @@
             width: 100%;
             bottom: 0;
         }
+       
     </style>
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1>Welcome to Our Online Store</h1>
+        <h1> Store</h1>
+        <nav>
+            <a href="#product1">BT Mouse</a>
+            <a href="#product2">Macbook</a>
+            <a href="#product3">AI Robot</a>
+            <a href="#product4">Airpod</a>
+        </nav>
     </header>
     <!-- Main container -->
     <div class="container mt-4">
         <div class="row">
             <!-- Product 1 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="product1">
                 <div class="product">
                     <img src="mouse.jpg" alt="Product 1">
                     <h2>BT Mouse</h2>
@@ -89,7 +108,7 @@
                 </div>
             </div>
             <!-- Product 2 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="product2">
                 <div class="product">
                     <img src="mac.jpg" alt="Product 2">
                     <h2>Macbook</h2>
@@ -99,7 +118,7 @@
                 </div>
             </div>
             <!-- Product 3 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="product3">
                 <div class="product">
                     <img src="robot.jpg" alt="Product 3">
                     <h2>AI Robot</h2>
@@ -109,7 +128,7 @@
                 </div>
             </div>
             <!-- Product 4 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" id="product4">
                 <div class="product">
                     <img src="airpodd.jpg" alt="Product 4">
                     <h2>Airpod</h2>
